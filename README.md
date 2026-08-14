@@ -65,16 +65,11 @@ uploading the finished website to the repository on GitHub.
 Details from Parts 2 and 3 will be included in further edits and submissions.
 7. Sitemap
 Dr. Dana's Dental Practice
-│
-├── Home
-│
-├── About
-│
-├── Services
-│
-├── Contact
-│
-└── Enquiry
+Home
+About
+Services
+Contact
+Enquiry
 8. Changelog
 Version 1.0: First Submission of the Website
 designed the original layout of the website.
