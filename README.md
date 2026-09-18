@@ -182,5 +182,10 @@ Future Updates
 
 Further website development, improvements, testing and final submission requirements will be recorded in the changelog as the project continues.
 
+Responsive layout
+<img width="1919" height="1070" alt="Screenshot 2026-09-18 162041" src="https://github.com/user-attachments/assets/b48b9faf-af34-4e85-b2fc-5c6f91fcbaf7" />
+<img width="1918" height="1069" alt="Screenshot 2026-09-18 161959" src="https://github.com/user-attachments/assets/9b300c7f-f282-4f19-a674-ab7d64854545" />
+<img width="1919" height="1070" alt="Screenshot 2026-09-18 162041" src="https://github.com/user-attachments/assets/125fca75-6fa2-4f20-84bc-503d0456d99f" />
+
 10. References
 ST_travel, 2025. Doctor holding digital tooth icon dental health cavity free oral care hygiene clean white teeth medical healthcare concept background. iStockphoto. Available at: [the iStock page] [Accessed: 18 September 2026].
