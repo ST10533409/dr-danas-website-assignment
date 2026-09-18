@@ -1,0 +1,944 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+/* GENERAL RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BODY */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* LISTS */
+
+ul {
+    list-style: none;
+}
+
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid #d9e5e8;
+    background-color: white;
+    padding: 10px 5%;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin: 0 auto 3px;
+}
+
+.logo h1 {
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 8px 5%;
+    background-color: white;
+}
+
+
+/* Navigation Links */
+
+nav a {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+/* Navigation Hover */
+
+nav a:hover {
+    color: #008c95;
+    transform: scale(1.05);
+    display: inline-block;
+    transition: 0.2s;
+}
+
+
+/* HEADINGS */
+
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+
+/* PARAGRAPHS */
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid #008c95;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #006f76;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/* HOME HERO SECTION */
+
+.hero {
+    background-image: url('../images/Dental\ reception.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 80px 10%;
+    text-align: left;
+}
+
+
+/* Words on the Home Picture */
+
+.hero-content {
+    max-width: 700px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+
+/* Home Heading */
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+
+/* Hero Paragraph */
+
+.hero-content p {
+    font-family: "Times New Roman", serif;
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 25px;
+}
+
+
+/* WHITE SECTIONS BELOW PICTURE */
+
+.content-section {
+    background-color: white;
+    padding: 50px 7%;
+}
+
+
+/* CUSTOMER REVIEWS */
+
+.reviews-section {
+    background-color: white;
+    padding: 60px 7%;
+    text-align: center;
+}
+
+
+/* Reviews Heading */
+
+.reviews-section h2 {
+    font-size: 2.5rem;
+    color: #172b4d;
+    margin-bottom: 10px;
+}
+
+
+/* Rating Information */
+
+.review-summary {
+    margin-bottom: 35px;
+    color: #172b4d;
+}
+
+.review-summary p {
+    margin-bottom: 5px;
+}
+
+
+/* Reviews Container */
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    text-align: left;
+}
+
+
+/* Individual Review Card */
+
+.review-card {
+    position: relative;
+
+    background-color: white;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    padding: 28px 22px 35px;
+
+    min-height: 300px;
+
+    box-shadow: 0 4px 15px rgba(23, 43, 77, 0.10);
+}
+
+
+/* Reviewer Top Section */
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+
+/* Reviewer Initial Circle */
+
+.reviewer-initials {
+    width: 48px;
+    height: 48px;
+
+    background-color: #172b4d;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* Reviewer Name */
+
+.reviewer-name {
+    font-weight: bold;
+    color: #172b4d;
+    margin-bottom: 2px;
+}
+
+
+/* Stars */
+
+.stars {
+    color: #d5a928;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+
+/* Review Rating */
+
+.review-rating {
+    font-size: 13px;
+    color: #172b4d;
+}
+
+
+/* Review Text */
+
+.review-card p {
+    font-size: 14px;
+    color: #172b4d;
+    margin-top: 15px;
+}
+
+
+/* Quotation Marks */
+
+.quote-mark {
+    position: absolute;
+
+    right: 18px;
+    bottom: 5px;
+
+    font-family: Georgia, serif;
+    font-size: 42px;
+
+    color: #d5a928;
+}
+
+
+/* BOTTOM INFORMATION AREA */
+
+.bottom-info {
+    background-color: white;
+
+    padding: 50px 7%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Information Cards */
+
+.info-card {
+    background-color: white;
+
+    border: 1px solid white;
+    border-radius: 15px;
+
+    padding: 30px;
+
+    box-shadow: 0 4px 15px rgba(23, 43, 77, 0.10);
+}
+
+
+/* Information Card Headings */
+
+.info-card h2 {
+    color: #172b4d;
+    margin-bottom: 20px;
+}
+
+
+/* Quick Links List */
+
+.info-card ul li {
+    margin-bottom: 12px;
+}
+
+
+/* Quick Links */
+
+.info-card ul li a {
+    color: #172b4d;
+    font-weight: 500;
+}
+
+.info-card ul li a:hover {
+    color: #008c95;
+}
+
+
+/* Arrow before Quick Links */
+
+.quick-link-item::before {
+    content: "›";
+
+    color: #008c95;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-right: 8px;
+}
+
+
+/* CONTACT INFORMATION */
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-item strong {
+    color: #008c95;
+}
+
+
+/* TRADING HOURS */
+
+.hours-item {
+    margin-bottom: 12px;
+}
+
+
+/* FAQ SECTION */
+
+.content-section {
+    padding: 50px 7%;
+    background-color: white;
+}
+
+
+/* FAQ Heading */
+
+.content-section h2 {
+    text-align: center;
+    color: #172b4d;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 12px 25px;
+    border: 2px solid #172b4d;
+}
+
+
+/* FAQ Questions */
+
+.content-section h3 {
+    color: #172b4d;
+    margin-top: 20px;
+}
+
+
+/* FAQ Answers */
+
+.content-section p {
+    color: #333;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #172b4d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px 5%;
+
+    border-top: 1px solid white;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets */
+
+@media (max-width: 1000px) {
+
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-info {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+
+/* MOBILE PHONES */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 500px;
+        padding: 50px 7%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-section {
+        padding: 40px 5%;
+    }
+
+    .bottom-info {
+        padding: 40px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+
+/* ABOUT US PAGE */
+
+
+/* ABOUT US BANNER */
+
+.about-banner {
+    background-image: url('../images/About\ us\ wallpaper.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 400px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    border: 8px solid white;
+}
+
+
+/* ABOUT US BANNER HEADING */
+
+.about-banner-content h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 4rem;
+
+    color: white;
+
+    text-shadow: 2px 2px 6px black;
+
+    margin: 0;
+}
+
+
+/* ABOUT PAGE SECTIONS */
+
+.about-section {
+    background-color: white;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 50px 30px;
+
+    text-align: center;
+}
+
+
+/* ABOUT PAGE HEADINGS */
+
+.about-section h2 {
+    color: #172b4d;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 25px;
+}
+
+
+/* ABOUT PAGE PARAGRAPHS */
+
+.about-section p {
+    color: #333;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 1.1rem;
+
+    max-width: 750px;
+
+    margin: 0 auto 20px;
+
+    line-height: 1.8;
+}
+
+
+/* ABOUT PAGE LISTS */
+
+.about-section ul {
+    list-style: none;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 0;
+}
+
+
+/* ABOUT PAGE LIST ITEMS */
+
+.about-section li {
+    color: #333;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* CHECK MARKS */
+
+.about-section li::before {
+    content: "✓";
+
+    color: #008c95;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+
+/* MOBILE ABOUT PAGE */
+
+@media (max-width: 600px) {
+
+    .about-banner {
+        min-height: 300px;
+    }
+
+    .about-banner-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .about-section p,
+    .about-section li {
+        font-size: 1rem;
+    }
+}
+
+
+/* SERVICES PAGE */
+
+.services-section {
+    text-align: center;
+}
+
+
+/* Heading and paragraph area */
+
+.services-introduction {
+    background-color: #008c95;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    margin-bottom: 40px;
+}
+
+.services-introduction h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.services-introduction p {
+    color: white;
+    margin-bottom: 0;
+}
+
+
+/* Service headings */
+
+.services-section h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* Centre service pictures */
+
+.services-section img {
+    display: block;
+    margin: 0 auto 30px;
+}
+
+
+/* TEAM PAGE */
+
+.team-introduction {
+    background-color: #008c95;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+.team-introduction h1 {
+    color: white;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.team-intro {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* CENTRE ALL TEAM CONTENT */
+
+main section {
+    text-align: center;
+}
+
+main section h2 {
+    text-align: center;
+}
+
+main section p {
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* CENTRE ALL TEAM PICTURES */
+
+main section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+/*CONTACT, ENQUIRY AND FAQ INTRODUCTIONS*/
+
+/* CONTACT PAGE INTRODUCTION */
+
+.contact-introduction {
+    background-color: #008c95;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+.contact-introduction h1 {
+    color: white;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.contact-intro {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* CONTACT PAGE CONTENT */
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content h3 {
+    text-align: center;
+}
+
+.contact-content p {
+    text-align: center;
+}
+
+.contact-content iframe {
+    display: block;
+    margin: 0 auto 30px;
+}
+
+
+/* ENQUIRY PAGE INTRODUCTION */
+
+.enquiry-introduction {
+    background-color: #008c95;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+.enquiry-introduction h2 {
+    color: white;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.enquiry-intro {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* ENQUIRY PAGE CONTENT */
+
+.enquiry-content {
+    text-align: center;
+}
+
+.enquiry-content form {
+    text-align: center;
+}
+
+
+/* FAQ PAGE INTRODUCTION */
+
+.faq-introduction {
+    background-color: #008c95;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+}
+
+.faq-introduction h2 {
+    color: white;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+.faq-intro {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.8;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* FAQ PAGE CONTENT */
+
+.faq-content {
+    text-align: center;
+}
+
+.faq-content article {
+    text-align: center;
+}
+
+.faq-content h3 {
+    text-align: center;
+}
+
+.faq-content p {
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}

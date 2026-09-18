@@ -1,68 +1,167 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Enquiry - Dr. Dana's Practice</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-    <!-- Header section -->
+    <!-- Header and navigation section -->
     <header>
-        <h1>Make an Enquiry</h1>
-        <p>Contact Dr. Dana's Practice for more information.</p>
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="Dr Dana Dentist Logo">
+
+            <h1>Dr Dana Dentist</h1>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="team.html">Our Team</a>
+
+            <a href="contact.html">Contact Us</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="faq.html">FAQs</a>
+
+        </nav>
+
     </header>
 
-    <!-- Navigation menu -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="team.html">Our Team</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="enquiry.html">Enquiry</a>
-    </nav>
 
     <!-- Main content -->
     <main>
 
-        <section>
+        <!-- Enquiry introduction -->
+        <section class="enquiry-introduction">
+
             <h2>Send Us an Enquiry</h2>
+
+            <p class="enquiry-intro">
+                Please complete the form below and provide your details so we can assist you.
+            </p>
+
+        </section>
+
+
+        <!-- Enquiry form -->
+        <section class="enquiry-content">
 
             <form>
 
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname" required>
+                <label for="fullname">
+                    Full Name:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    required>
+
                 <br><br>
 
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required>
+
+                <label for="email">
+                    Email Address:
+                </label>
+
+                <br>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
                 <br><br>
 
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone">
+
+                <label for="phone">
+                    Phone Number:
+                </label>
+
+                <br>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone">
+
                 <br><br>
 
-                <label for="subject">Subject:</label><br>
-                <input type="text" id="subject" name="subject" required>
+
+                <label for="subject">
+                    Subject:
+                </label>
+
+                <br>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required>
+
                 <br><br>
 
-                <label for="message">Your Enquiry:</label><br>
-                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+
+                <label for="message">
+                    Your Enquiry:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="30"
+                    required></textarea>
+
                 <br><br>
 
-                <button type="submit">Submit Enquiry</button>
+
+                <button type="submit">
+                    Submit Enquiry
+                </button>
 
             </form>
+
         </section>
 
     </main>
 
+
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Dr. Dana's Practice. All rights reserved.</p>
+
+        <p>
+            &copy; 2026 Dr. Dana's Practice. All rights reserved.
+        </p>
+
     </footer>
 
 </body>

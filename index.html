@@ -5,110 +5,324 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr Dana Dentist - Home</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
 
-    <!-- Header section -->
+    <!-- Header and navigation section -->
     <header>
-        <h1>Dr Dana Dentist</h1>
-        <p>Professional Dental Care for a Healthy Smile</p>
-    </header>
 
-    <!-- Navigation menu -->
-    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Dr Dana Dentist Logo">
+            <h1>Dr Dana Dentist</h1>
+        </div>
+
+        <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
         <a href="team.html">Our Team</a>
         <a href="contact.html">Contact Us</a>
         <a href="enquiry.html">Enquiry</a>
+        <a href="faq.html#faqs">FAQs</a>
     </nav>
+
+    </header>
 
     <!-- Main content -->
     <main>
 
-        <section>
-            <h2>Welcome to Dr Dana Dentist</h2>
+        <!-- Homepage background section -->
+         <section class="hero">
+
+            <div class="hero-content">
+
+            <h2>Welcome to</h2>
+
+            <h1>Dr Dana's Practice</h1>
 
             <p>
-                Welcome to Dr Dana Dentist, a dental clinic committed
-                to providing professional and friendly dental care.
+                Your smile is our passion. We provide professionl,
+                quality dental care in a comfortable and welcoming environment.
             </p>
+
+            <a href="enquiry.html" class="btn">
+                Book a Consultation
+            </a>
+
+            </div>
+
+        </section>
+        
+        <!-- Customer Reviews -->
+<section class="reviews-section">
+
+    <h2>Customer Reviews</h2>
+
+    <!-- Review Summary -->
+    <div class="review-summary">
+        <p><strong>Overall Rating:</strong> 2.0 out of 5</p>
+        <p><strong>Total Reviews:</strong> 4</p>
+    </div>
+
+    <!-- Review Cards -->
+    <div class="reviews-container">
+
+        <!-- Review 1 -->
+        <article class="review-card">
+
+            <div class="reviewer">
+
+                <div class="reviewer-initials">
+                    LM
+                </div>
+
+                <div>
+                    <div class="reviewer-name">
+                        Linkie Motimele
+                    </div>
+
+                    <div class="stars">
+                        ★☆☆☆☆
+                    </div>
+
+                    <div class="review-rating">
+                        1 out of 5
+                    </div>
+                </div>
+
+            </div>
 
             <p>
-                We aim to provide patients with a comfortable environment
-                where they can receive dental care and maintain good oral health.
+                I am disappointed with the service I received.
+                I paid R600 for cleaning and polishing, and before
+                the appointment the practice confirmed that both
+                would be done. However, on the day I was told polishing
+                is a separate appointment.
             </p>
-        </section>
 
-        <section>
-            <h2>Our Dental Services</h2>
+            <span class="quote-mark">”</span>
 
-            <ul>
-                <li>General Dentistry</li>
-                <li>Teeth Cleaning</li>
-                <li>Dental Check-ups</li>
-                <li>Teeth Whitening</li>
-                <li>Dental Consultations</li>
-            </ul>
-        </section>
+        </article>
 
-        <!-- Customer reviews -->
-        <section>
-            <h2>Customer Reviews</h2>
 
-            <p><strong>Overall Rating:</strong> 2.0 out of 5</p>
-            <p><strong>Total Reviews:</strong> 4</p>
+        <!-- Review 2 -->
+        <article class="review-card">
 
-            <article>
-                <h3>Linkie Motimele</h3>
-                <p><strong>Rating:</strong> 1 out of 5</p>
-                <p><strong>Review:</strong></p>
-                <p>
-                    I am disappointed with the service I received.
-                    I paid R600 for cleaning and polishing, and before
-                    the appointment the practice confirmed that both
-                    would be done. However, on the day I was told polishing
-                    is a separate appointment.
-                </p>
-            </article>
+            <div class="reviewer">
 
-            <article>
-                <h3>Phindiwe Booi</h3>
-                <p><strong>Rating:</strong> 1 out of 5</p>
-                <p><strong>Review:</strong></p>
-                <p>
-                    I am so disappointed with this Dr as it was recommended
-                    by a colleague but now I am experiencing bad communication
-                    and customer service as I am still waiting for my son's
-                    platinum from March 10. I called several times without
-                    any resolution.
-                </p>
-            </article>
+                <div class="reviewer-initials">
+                    PB
+                </div>
 
-            <article>
-                <h3>Lucian Shale</h3>
-                <p><strong>Rating:</strong> 5 out of 5</p>
-                <p><strong>Review:</strong></p>
-                <p>
-                    I have been here twice already and all the 2 times I was
-                    there I got good service. The doctor herself is very friendly.
-                </p>
-            </article>
+                <div>
+                    <div class="reviewer-name">
+                        Phindiwe Booi
+                    </div>
 
-            <article>
-                <h3>Godknows Ndou</h3>
-                <p><strong>Rating:</strong> 1 out of 5</p>
-                <p><strong>Review:</strong></p>
-                <p>
-                    Unsatisfactory service.
-                </p>
-            </article>
+                    <div class="stars">
+                        ★☆☆☆☆
+                    </div>
 
-        </section>
+                    <div class="review-rating">
+                        1 out of 5
+                    </div>
+                </div>
 
-    </main>
+            </div>
+
+            <p>
+                I am so disappointed with this Dr as it was recommended
+                by a colleague but now I am experiencing bad communication
+                and customer service as I am still waiting for my son's
+                platinum from March 10. I called several times without
+                any resolution.
+            </p>
+
+            <span class="quote-mark">”</span>
+
+        </article>
+
+
+        <!-- Review 3 -->
+        <article class="review-card">
+
+            <div class="reviewer">
+
+                <div class="reviewer-initials">
+                    LS
+                </div>
+
+                <div>
+                    <div class="reviewer-name">
+                        Lucian Shale
+                    </div>
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <div class="review-rating">
+                        5 out of 5
+                    </div>
+                </div>
+
+            </div>
+
+            <p>
+                I have been here twice already and all the 2 times I was
+                there I got good service. The doctor herself is very friendly.
+            </p>
+
+            <span class="quote-mark">”</span>
+
+        </article>
+
+
+        <!-- Review 4 -->
+        <article class="review-card">
+
+            <div class="reviewer">
+
+                <div class="reviewer-initials">
+                    GN
+                </div>
+
+                <div>
+                    <div class="reviewer-name">
+                        Godknows Ndou
+                    </div>
+
+                    <div class="stars">
+                        ★☆☆☆☆
+                    </div>
+
+                    <div class="review-rating">
+                        1 out of 5
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p>
+                Unsatisfactory service.
+            </p>
+
+            <span class="quote-mark">”</span>
+
+        </article>
+
+    </div>
+
+    <!-- Review Navigation Dots -->
+    <div class="review-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</section>
+
+</main>
+
+    <!-- Quick Links, Contact and Trading Hours -->
+<section class="bottom-info">
+
+    <!-- Quick Links -->
+    <div class="info-card">
+
+        <h2>Quick Links</h2>
+
+        <ul>
+
+            <li class="quick-link-item">
+                <a href="services.html">Services</a>
+            </li>
+
+            <li class="quick-link-item">
+                <a href="team.html">Our Team</a>
+            </li>
+
+            <li class="quick-link-item">
+                <a href="contact.html">Contact Us</a>
+            </li>
+
+            <li class="quick-link-item">
+                <a href="enquiry.html">Enquiry</a>
+            </li>
+
+            <li class="quick-link-item">
+                <a href="faq.html">FAQs</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Contact Information -->
+    <div class="info-card">
+
+        <h2>Contact</h2>
+
+        <div class="contact-item">
+            <strong>Address:</strong>
+            <p>
+                Amalinda, KuGompo City, 5247
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <strong>Phone:</strong>
+            <p>
+                <a href="tel:0681336322">
+                    068 133 6322
+                </a>
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <strong>WhatsApp:</strong>
+            <p>
+                <a href="https://wa.me/0681336322">
+                    Chat with us on WhatsApp
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Trading Hours -->
+    <div class="info-card">
+
+        <h2>Trading Hours</h2>
+
+        <p class="hours-item">
+            <strong>Monday - Friday:</strong><br>
+            8:00 AM - 17:00 PM
+        </p>
+
+        <p class="hours-item">
+            <strong>Saturday:</strong><br>
+            9:00 AM - 13:00 PM
+        </p>
+
+        <p class="hours-item">
+            <strong>Sunday:</strong><br>
+            Closed
+        </p>
+
+    </div>
+
+</section>
 
     <!-- Footer -->
     <footer>
