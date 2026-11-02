@@ -1,22 +1,23 @@
-Dr. Dana's Dental Practice Website
+# Dr. Dana's Dental Practice Website
 
-1. Student Information
+## 1. Student Information
 
-Student Number: ST10533409  
-Programme: Diploma in Network Management  
-Institution: Rosebank International  
-Project: Dr. Dana's Dental Practice Website  
+**Student Number:** ST10533409  
+**Programme:** Diploma in Network Management  
+**Institution:** Rosebank International  
+**Project:** Dr. Dana's Dental Practice Website
 
-
-2. Project Overview
+## 2. Project Overview
 
 The Dr. Dana's Dental Practice website was created to provide patients with clear information about the dental practice, the services it offers, and how to contact the practice or make an enquiry.
 
-Through a straightforward and well-organised interface, the website provides users with information about Dr. Dana's practice and its dental services. The website is intended to provide the dental practice with a professional online presence while making important information easy to find.
+Through a straightforward, well-organised and visually appealing interface, the website provides users with information about Dr. Dana's practice and its dental services. The website is intended to provide the dental practice with a professional online presence while making important information easy to find.
 
-The website consists of several pages that allow users to navigate between different aspects of the practice, including information about the practice, dental services, contact details, the dental team, an enquiry page and frequently asked questions.
+The website consists of eight pages that allow users to navigate between different aspects of the practice, including information about the practice, dental services, the dental team, contact details, an enquiry page, frequently asked questions and a gallery.
 
-3. Website Goals and Objectives
+The website was developed using HTML5, CSS3 and JavaScript.
+
+## 3. Website Goals and Objectives
 
 The main goals and objectives of the website are to:
 
@@ -29,47 +30,41 @@ The main goals and objectives of the website are to:
 - Use appropriate graphic elements and images to improve the user experience.
 - Maintain a consistent and professional design throughout the website.
 - Ensure that the website can be viewed on different screen sizes.
+- Improve the overall visual presentation and usability of the website.
 
-4. Essential Functions and Features
+## 4. Essential Functions and Features
 
-The following features are present on the website:
+The following pages and features are included in the website:
 
-Home Page
-Provides an introduction to Dr. Dana's Dental Practice and includes a welcoming hero section, a consultation button, customer reviews, quick links, contact information and trading hours.
+**Home Page:** Provides an introduction to Dr. Dana's Dental Practice and includes a welcoming hero section, a consultation button, customer reviews, quick links, contact information and trading hours.
 
-About Us Page
-Provides information about Dr. Dana's Practice, including information about the practice, its mission and its vision.
+**About Us Page:** Provides information about Dr. Dana's practice, including information about the practice, its mission and its vision.
 
-Services Page
-Describes the dental services provided by the practice.
+**Services Page:** Describes the dental services provided by the practice.
 
-Our Team Page
-Provides information about the members of the dental team, including Dr. Dana, the receptionist and the dental assistant.
+**Our Team Page:** Provides information about the members of the dental team, including Dr. Dana, the receptionist and the dental assistant.
 
-Contact Us Page
-Provides the practice's telephone number, address and location using a Google Maps section.
+**Contact Us Page:** Provides the practice's telephone number, address and location using a Google Maps section.
 
-Enquiry Page
-Allows visitors to submit an enquiry to the dental practice.
+**Enquiry Page:** Allows visitors to complete an enquiry form. The form currently provides front-end functionality and requires a backend or form-handling service to deliver enquiries.
 
-FAQs Page
-Provides answers to frequently asked questions about the dental practice and its services.
+**FAQs Page:** Provides answers to frequently asked questions about the dental practice and its services.
 
-Navigation
-A navigation menu is included across the website to allow users to move between the different pages.
+**Gallery Page:** Displays photographs of the practice and its facilities, including the reception, waiting area, treatment room, consultation room and digital X-ray suite.
 
-Images
-Dental-related images and practice imagery are used to improve the visual presentation of the website.
+**Navigation:** A navigation menu is included across the website to allow users to move between the different pages.
 
-Responsive Layout
-Responsive CSS styling has been implemented so that the website can adapt to different screen sizes, including desktop, tablet and mobile layouts.
+**Images:** Dental-related images and practice imagery are used to improve the visual presentation of the website.
 
-Professional Design
-Consistent typography, spacing, colours, buttons, headings and visual elements are used throughout the website.
+**Responsive Layout:** Responsive CSS styling allows the website to adapt to different screen sizes, including desktop, tablet and mobile layouts.
 
-5. Schedule and Significant Events
+**Professional Design:** Consistent typography, spacing, colours, buttons, headings and visual elements are used throughout the website.
 
-Part 1
+**JavaScript Interactivity:** JavaScript is used for interactive website features, including navigation behaviour, FAQ interactions, image viewing and other user-interface functionality.
+
+## 5. Schedule and Significant Events
+
+### Part 1
 
 - Project requirements were reviewed.
 - The target audience and website concept were determined.
@@ -83,7 +78,7 @@ Part 1
 - Links, images and page functionality were tested.
 - The website files were uploaded to GitHub.
 
-Part 2
+### Part 2
 
 - An external CSS stylesheet was created and linked to the website pages.
 - General website styling was applied.
@@ -98,13 +93,19 @@ Part 2
 - The desktop layout was tested using the normal browser view.
 - Layout issues identified during testing were adjusted.
 
-Future Milestones
+### Part 3 – Website Redesign and Further Development
 
-Part 3: Further website development, final improvements, testing and submission requirements will be completed in the next stage of the project.
+- The existing website pages were reviewed and prepared for redesign.
+- The HTML structure of the website pages was updated.
+- The Gallery page was included in the website structure.
+- The external CSS stylesheet was redesigned.
+- The website's visual presentation was updated using a consistent teal, white, navy and gold colour palette.
+- Typography, spacing, alignment and page layouts were improved.
+- Existing website images were retained.
+- The CSS stylesheet was organised to provide consistent styling across the website pages.
+- Further JavaScript improvements and website functionality checks are part of the remaining development and testing process.
 
----
-
-6. Details of Part 1
+## 6. Details of Part 1
 
 The main focus of Part 1 was designing and creating the first iteration of the Dr. Dana's Dental Practice website.
 
@@ -118,12 +119,12 @@ Tasks completed during Part 1 included:
 - Creating the initial website design and layout.
 - Creating an enquiry page.
 - Creating sections containing contact information.
-- Testing links, images and page functionality.
+- Testing links, images and basic website functionality.
 - Uploading the website files to the GitHub repository.
 
-Further improvements and styling were completed during Part 2.
+Further improvements and styling were completed during Part 2, followed by additional website redesign work in Part 3.
 
-7. Sitemap
+## 7. Sitemap
 
 The website consists of the following pages:
 
@@ -134,23 +135,38 @@ The website consists of the following pages:
 - Contact Us
 - Enquiry
 - FAQs
+- Gallery
 
-8. Website Structure
+## 8. Website Structure
 
 ```text
-Dr. Dana's Dental Practice
+Dr. Dana's Dental Practice/
 │
-├── Home
-├── About Us
-├── Services
-├── Our Team
-├── Contact Us
-├── Enquiry
-└── FAQs
+├── css/
+│   ├── style.css
+│   └── style-backup.css
+│
+├── images/
+│   └── Website images
+│
+├── js/
+│   └── script.js
+│
+├── index.html
+├── about.html
+├── services.html
+├── team.html
+├── contact.html
+├── enquiry.html
+├── faq.html
+├── gallery.html
+│
+└── README.md
+```
 
-9. Changelog
+## 9. Changelog
 
-Version 1.0 – Part 1
+### Version 1.0 – Part 1
 
 - Created the initial Dr. Dana's Dental Practice website.
 - Created the main HTML pages for the website.
@@ -162,7 +178,7 @@ Version 1.0 – Part 1
 - Tested links, images and basic website functionality.
 - Uploaded the website files to GitHub.
 
-Version 2.0 – Part 2
+### Version 2.0 – Part 2
 
 - Created and linked the external `style.css` stylesheet.
 - Applied CSS styling to the website pages.
@@ -176,16 +192,34 @@ Version 2.0 – Part 2
 - Added a tablet breakpoint at 1000px.
 - Tested the website on mobile, tablet and desktop screen sizes.
 - Adjusted the website layout after responsive testing.
-- Updated the README file to document the Part 2 development.
 
-Future Updates
+### Version 3.0 – Part 3: Website Redesign
+
+- Updated the HTML structure across the website pages.
+- Added the Gallery page to the website sitemap and navigation.
+- Redesigned the external `style.css` stylesheet.
+- Introduced a more consistent teal, white, navy and gold colour scheme.
+- Improved typography through updated font choices.
+- Improved page layouts, spacing, alignment and visual hierarchy.
+- Updated the presentation of service, team, review and gallery sections.
+- Retained the existing website images.
+- Added styling for interactive elements and responsive layouts.
+- Prepared the website for further JavaScript improvements and final testing.
+
+### Future Updates
 
 Further website development, improvements, testing and final submission requirements will be recorded in the changelog as the project continues.
 
-Responsive layout
+## Responsive Layout Evidence
+
+The following screenshots document the responsive layouts developed during Part 2.
+
 <img width="1919" height="1070" alt="Screenshot 2026-09-18 162041" src="https://github.com/user-attachments/assets/b48b9faf-af34-4e85-b2fc-5c6f91fcbaf7" />
-<img width="1918" height="1069" alt="Screenshot 2026-09-18 161959" src="https://github.com/user-attachments/assets/9b300c7f-f282-4f19-a674-ab7d64854545" />
+
+<img width="1918" height="1069" alt="Screenshot 2026-09-18 161959" src="https://github.com/user-attachments/assets/9b300c7f-f282-4f20-84bc-ab7d64854545" />
+
 <img width="1919" height="1070" alt="Screenshot 2026-09-18 162041" src="https://github.com/user-attachments/assets/125fca75-6fa2-4f20-84bc-503d0456d99f" />
 
-10. References
-ST_travel, 2025. Doctor holding digital tooth icon dental health cavity free oral care hygiene clean white teeth medical healthcare concept background. iStockphoto. Available at: [the iStock page] [Accessed: 18 September 2026].
+## 10. References
+
+ST_travel, 2025. *Doctor holding digital tooth icon dental health cavity free oral care hygiene clean white teeth medical healthcare concept background*. iStockphoto. Available at: [Insert the original iStockphoto URL] [Accessed: 18 September 2026].
