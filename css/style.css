@@ -1,944 +1,1389 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* =========================================================
+   DR DANA DENTIST — COMPLETE WEBSITE REDESIGN
+   Colour palette: Teal | White | Navy | Gold
+   Existing website images are preserved.
+========================================================= */
 
 
-/* GENERAL RESET */
+/* 1. GOOGLE FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+
+/* 2. COLOUR VARIABLES
+========================================================= */
+
+:root {
+    --teal: #078b91;
+    --teal-dark: #056d73;
+    --teal-light: #e8f6f5;
+
+    --navy: #172b4d;
+    --navy-light: #263f64;
+
+    --white: #ffffff;
+    --cream: #fbfaf7;
+    --soft-bg: #f3f8f8;
+
+    --gold: #d5a928;
+    --gold-light: #f4e8c6;
+
+    --text: #334155;
+    --muted: #718096;
+    --border: #e2eaea;
+
+    --shadow-sm: 0 5px 18px rgba(23, 43, 77, 0.07);
+    --shadow-md: 0 12px 35px rgba(23, 43, 77, 0.11);
+    --shadow-lg: 0 20px 55px rgba(23, 43, 77, 0.16);
+
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+
+    --transition: 0.3s ease;
+}
+
+
+/* 3. GLOBAL RESET AND BASE STYLES
+========================================================= */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-
-/* BODY */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: white;
-    color: black;
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
 }
-
-
-/* IMAGES */
 
 img {
-    max-width: 100%;
-    height: auto;
     display: block;
+    max-width: 100%;
 }
-
-
-/* LINKS */
 
 a {
-    text-decoration: none;
     color: inherit;
-}
-
-
-/* LISTS */
-
-ul {
-    list-style: none;
-}
-
-
-/* HEADER */
-
-header {
-    border-bottom: 1px solid #d9e5e8;
-    background-color: white;
-    padding: 10px 5%;
-}
-
-
-/* LOGO */
-
-.logo {
-    text-align: center;
-}
-
-.logo img {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-    margin: 0 auto 3px;
-}
-
-.logo h1 {
-    font-size: 22px;
-    margin-bottom: 0;
-}
-
-
-/* NAVIGATION */
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    padding: 8px 5%;
-    background-color: white;
-}
-
-
-/* Navigation Links */
-
-nav a {
-    font-weight: 600;
-    color: black;
     text-decoration: none;
-    font-size: 15px;
 }
 
-
-/* Navigation Hover */
-
-nav a:hover {
-    color: #008c95;
-    transform: scale(1.05);
-    display: inline-block;
-    transition: 0.2s;
+button,
+input,
+textarea,
+select {
+    font: inherit;
 }
 
-
-/* HEADINGS */
-
-h1,
-h2,
-h3 {
-    margin-bottom: 15px;
-    line-height: 1.2;
-    font-family: 'Playfair Display', serif;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.4rem;
-}
-
-
-/* PARAGRAPHS */
-
-p {
-    margin-bottom: 15px;
-}
-
-
-/* BUTTONS */
-
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 8px;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    border: 2px solid #008c95;
+button {
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #006f76;
-    color: white;
-    transition: 0.2s;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--navy);
+    line-height: 1.2;
+}
+
+p {
+    color: var(--muted);
+}
+
+::selection {
+    background: var(--teal);
+    color: var(--white);
 }
 
 
-/* HOME HERO SECTION */
+/* 4. SHARED HEADER AND NAVIGATION
+========================================================= */
 
-.hero {
-    background-image: url('../images/Dental\ reception.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.site-header,
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.97);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 18px rgba(23, 43, 77, 0.06);
+    border-bottom: 1px solid rgba(7, 139, 145, 0.08);
+}
 
-    min-height: 600px;
-
+.header-container {
+    max-width: 1250px;
+    min-height: 88px;
+    margin: auto;
+    padding: 12px 5%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-
-    padding: 80px 10%;
-    text-align: left;
+    justify-content: space-between;
+    gap: 25px;
 }
 
-
-/* Words on the Home Picture */
-
-.hero-content {
-    max-width: 700px;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0;
-    text-align: left;
-}
-
-
-/* Home Heading */
-
-.hero-content h2 {
-    font-size: 2.5rem;
-    color: whitesmoke;
-    margin-bottom: 3px;
-    text-align: left;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
-    color: whitesmoke;
-    margin-bottom: 5px;
-    text-align: left;
-}
-
-
-/* Hero Paragraph */
-
-.hero-content p {
-    font-family: "Times New Roman", serif;
-    font-size: 1.2rem;
-    color: black;
-    margin-bottom: 25px;
-}
-
-
-/* WHITE SECTIONS BELOW PICTURE */
-
-.content-section {
-    background-color: white;
-    padding: 50px 7%;
-}
-
-
-/* CUSTOMER REVIEWS */
-
-.reviews-section {
-    background-color: white;
-    padding: 60px 7%;
-    text-align: center;
-}
-
-
-/* Reviews Heading */
-
-.reviews-section h2 {
-    font-size: 2.5rem;
-    color: #172b4d;
-    margin-bottom: 10px;
-}
-
-
-/* Rating Information */
-
-.review-summary {
-    margin-bottom: 35px;
-    color: #172b4d;
-}
-
-.review-summary p {
-    margin-bottom: 5px;
-}
-
-
-/* Reviews Container */
-
-.reviews-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    text-align: left;
-}
-
-
-/* Individual Review Card */
-
-.review-card {
-    position: relative;
-
-    background-color: white;
-
-    border: 1px solid white;
-    border-radius: 15px;
-
-    padding: 28px 22px 35px;
-
-    min-height: 300px;
-
-    box-shadow: 0 4px 15px rgba(23, 43, 77, 0.10);
-}
-
-
-/* Reviewer Top Section */
-
-.reviewer {
+.logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 12px;
+    flex-shrink: 0;
 }
 
+.logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
 
-/* Reviewer Initial Circle */
+.logo span,
+.logo h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.2;
+}
 
-.reviewer-initials {
-    width: 48px;
-    height: 48px;
-
-    background-color: #172b4d;
-    color: white;
-
-    border-radius: 50%;
-
+.main-nav,
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
-    font-weight: bold;
-    font-size: 15px;
+.main-nav a,
+nav a {
+    color: var(--navy);
+    font-size: 0.87rem;
+    font-weight: 600;
+    padding: 10px 12px;
+    border-radius: 30px;
+    transition: var(--transition);
+}
+
+.main-nav a:hover,
+nav a:hover {
+    color: var(--teal);
+    background: var(--teal-light);
+}
+
+.main-nav a.active,
+nav a.active {
+    color: var(--white);
+    background: var(--teal);
 }
 
 
-/* Reviewer Name */
+/* 5. BUTTONS
+========================================================= */
 
-.reviewer-name {
-    font-weight: bold;
-    color: #172b4d;
-    margin-bottom: 2px;
+.btn,
+button.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    padding: 13px 27px;
+    font-weight: 700;
+    font-size: 0.93rem;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    background: var(--teal);
+    color: var(--white);
+    box-shadow: 0 7px 18px rgba(7, 139, 145, 0.2);
+}
+
+.btn-primary:hover {
+    background: var(--teal-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 11px 24px rgba(7, 139, 145, 0.27);
+}
+
+.btn-outline {
+    border-color: var(--teal);
+    color: var(--teal);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--teal);
+    color: var(--white);
+    transform: translateY(-3px);
 }
 
 
-/* Stars */
+/* 6. SHARED SECTION STYLES
+========================================================= */
 
-.stars {
-    color: #d5a928;
-    font-size: 16px;
+.section-padding {
+    padding: 90px 6%;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin: 12px 0 17px;
+}
+
+.section-heading p {
+    font-size: 1rem;
+    max-width: 650px;
+    margin: auto;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: var(--teal);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+}
+
+main section {
+    width: 100%;
+}
+
+
+/* 7. HOMEPAGE HERO
+========================================================= */
+
+.hero {
+    min-height: 620px;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image:
+        linear-gradient(90deg, rgba(13, 34, 57, 0.83), rgba(13, 34, 57, 0.28)),
+        url('../images/Dental reception.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 680px;
+    padding: 45px;
+    border-radius: var(--radius-lg);
+    background: rgba(18, 39, 64, 0.78);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-content h1 {
+    color: var(--white);
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    margin: 12px 0 20px;
+}
+
+.hero-content h1 span {
+    color: var(--gold);
+}
+
+.hero-content p {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+    max-width: 560px;
+}
+
+.hero-content .eyebrow {
+    color: #f3d77f;
+}
+
+
+/* 8. HOMEPAGE REVIEWS
+========================================================= */
+
+.reviews-section {
+    padding: 85px 6%;
+    background: var(--soft-bg);
+}
+
+.reviews-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.reviews-section > p {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.review-summary {
+    text-align: center;
+    margin: 25px auto 35px;
+}
+
+.review-summary strong {
+    display: block;
+    color: var(--navy);
+    font-size: 2.6rem;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+.review-summary span {
+    color: var(--gold);
+    font-size: 1.4rem;
+}
+
+.review-grid,
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.review-card {
+    background: var(--white);
+    padding: 27px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.review-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-md);
+}
+
+.review-card h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 9px;
+}
+
+.review-card p {
+    font-size: 0.9rem;
+}
+
+.review-card .stars,
+.review-card .rating {
+    color: var(--gold);
+    margin-bottom: 12px;
     letter-spacing: 2px;
 }
 
 
-/* Review Rating */
-
-.review-rating {
-    font-size: 13px;
-    color: #172b4d;
-}
-
-
-/* Review Text */
-
-.review-card p {
-    font-size: 14px;
-    color: #172b4d;
-    margin-top: 15px;
-}
-
-
-/* Quotation Marks */
-
-.quote-mark {
-    position: absolute;
-
-    right: 18px;
-    bottom: 5px;
-
-    font-family: Georgia, serif;
-    font-size: 42px;
-
-    color: #d5a928;
-}
-
-
-/* BOTTOM INFORMATION AREA */
+/* 9. HOMEPAGE BOTTOM INFORMATION
+========================================================= */
 
 .bottom-info {
-    background-color: white;
-
-    padding: 50px 7%;
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    padding: 75px 6%;
+    background: var(--white);
 }
 
-
-/* Information Cards */
-
-.info-card {
-    background-color: white;
-
-    border: 1px solid white;
-    border-radius: 15px;
-
+.bottom-info > div {
     padding: 30px;
+    background: var(--soft-bg);
+    border-radius: var(--radius-md);
+    border-top: 4px solid var(--teal);
+}
 
-    box-shadow: 0 4px 15px rgba(23, 43, 77, 0.10);
+.bottom-info h2,
+.bottom-info h3 {
+    font-size: 1.45rem;
+    margin-bottom: 17px;
+}
+
+.bottom-info p,
+.bottom-info li {
+    font-size: 0.92rem;
+    margin-bottom: 9px;
+}
+
+.bottom-info ul {
+    list-style: none;
+}
+
+.bottom-info a {
+    color: var(--teal-dark);
+    font-weight: 600;
+}
+
+.bottom-info a:hover {
+    text-decoration: underline;
 }
 
 
-/* Information Card Headings */
+/* 10. INNER PAGE HERO
+========================================================= */
 
-.info-card h2 {
-    color: #172b4d;
+.page-hero {
+    min-height: 340px;
+    padding: 75px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at top right, rgba(213, 169, 40, 0.18), transparent 35%),
+        linear-gradient(135deg, var(--navy), #24566b);
+}
+
+.page-hero-content {
+    max-width: 780px;
+}
+
+.page-hero h1 {
+    color: var(--white);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin: 14px 0 18px;
+}
+
+.page-hero p {
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 680px;
+    margin: auto;
+}
+
+.page-hero .eyebrow {
+    color: #f1d67e;
+}
+
+
+/* 11. ABOUT PAGE
+========================================================= */
+
+.about-intro {
+    max-width: 1050px;
+    margin: auto;
+    padding: 85px 6%;
+    text-align: center;
+}
+
+.about-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 22px;
+}
+
+.about-intro p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.about-values,
+.mission-vision,
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1150px;
+    padding: 0 6% 85px;
+    margin: auto;
+}
+
+.about-card,
+.mission-card,
+.vision-card,
+.value-card {
+    padding: 38px;
+    border-radius: var(--radius-lg);
+    background: var(--soft-bg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.about-card h2,
+.mission-card h2,
+.vision-card h2,
+.value-card h2 {
+    font-size: 2rem;
     margin-bottom: 20px;
 }
 
+.about-card ul,
+.mission-card ul,
+.vision-card ul,
+.value-card ul {
+    padding-left: 22px;
+}
 
-/* Quick Links List */
-
-.info-card ul li {
+.about-card li,
+.mission-card li,
+.vision-card li,
+.value-card li {
     margin-bottom: 12px;
+    color: var(--text);
 }
 
-
-/* Quick Links */
-
-.info-card ul li a {
-    color: #172b4d;
-    font-weight: 500;
+.about-cta {
+    text-align: center;
+    padding: 75px 6%;
+    background: var(--teal-light);
 }
 
-.info-card ul li a:hover {
-    color: #008c95;
-}
-
-
-/* Arrow before Quick Links */
-
-.quick-link-item::before {
-    content: "›";
-
-    color: #008c95;
-
-    font-size: 20px;
-    font-weight: bold;
-
-    margin-right: 8px;
-}
-
-
-/* CONTACT INFORMATION */
-
-.contact-item {
+.about-cta h2 {
+    font-size: 2.3rem;
     margin-bottom: 15px;
 }
 
-.contact-item strong {
-    color: #008c95;
+.about-cta p {
+    max-width: 650px;
+    margin: 0 auto 25px;
 }
 
 
-/* TRADING HOURS */
+/* 12. SERVICES PAGE
+========================================================= */
 
-.hours-item {
+.services-section {
+    padding: 85px 6%;
+    background: var(--soft-bg);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    border: 1px solid var(--border);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.service-card img {
+    width: 100%;
+    height: 245px;
+    object-fit: cover;
+}
+
+.service-card-content {
+    padding: 25px;
+}
+
+.service-card h2,
+.service-card h3 {
+    font-size: 1.45rem;
     margin-bottom: 12px;
 }
 
-
-/* FAQ SECTION */
-
-.content-section {
-    padding: 50px 7%;
-    background-color: white;
+.service-card p {
+    font-size: 0.93rem;
 }
 
-
-/* FAQ Heading */
-
-.content-section h2 {
-    text-align: center;
-    color: #172b4d;
-    margin: 0 auto 30px;
-    border-radius: 8px;
-    width: fit-content;
-    padding: 12px 25px;
-    border: 2px solid #172b4d;
+.service-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
 }
 
-
-/* FAQ Questions */
-
-.content-section h3 {
-    color: #172b4d;
-    margin-top: 20px;
-}
-
-
-/* FAQ Answers */
-
-.content-section p {
-    color: #333;
-}
-
-
-/* FOOTER SECTION */
-
-footer {
-    background-color: #172b4d;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 25px 5%;
-
-    border-top: 1px solid white;
-}
-
-footer p {
-    margin-bottom: 0;
-}
-
-
-/* RESPONSIVE DESIGN */
-
-/* Tablets */
-
-@media (max-width: 1000px) {
-
-    .reviews-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .bottom-info {
-        grid-template-columns: 1fr;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-}
-
-
-/* MOBILE PHONES */
-
-@media (max-width: 600px) {
-
-    .hero {
-        min-height: 500px;
-        padding: 50px 7%;
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
-
-    .reviews-container {
-        grid-template-columns: 1fr;
-    }
-
-    .reviews-section {
-        padding: 40px 5%;
-    }
-
-    .bottom-info {
-        padding: 40px 5%;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-}
-
-
-/* ABOUT US PAGE */
-
-
-/* ABOUT US BANNER */
-
-.about-banner {
-    background-image: url('../images/About\ us\ wallpaper.jpg');
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    min-height: 400px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    border: 8px solid white;
-}
-
-
-/* ABOUT US BANNER HEADING */
-
-.about-banner-content h2 {
-    font-family: 'Playfair Display', serif;
-
-    font-size: 4rem;
-
-    color: white;
-
-    text-shadow: 2px 2px 6px black;
-
-    margin: 0;
-}
-
-
-/* ABOUT PAGE SECTIONS */
-
-.about-section {
-    background-color: white;
-
-    max-width: 900px;
-
-    margin: 0 auto;
-
-    padding: 50px 30px;
-
-    text-align: center;
-}
-
-
-/* ABOUT PAGE HEADINGS */
-
-.about-section h2 {
-    color: #172b4d;
-
-    font-family: 'Playfair Display', serif;
-
-    font-size: 2.5rem;
-
+.service-item {
+    background: var(--white);
+    padding: 22px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     margin-bottom: 25px;
 }
 
-
-/* ABOUT PAGE PARAGRAPHS */
-
-.about-section p {
-    color: #333;
-
-    font-family: "Times New Roman", serif;
-
-    font-size: 1.1rem;
-
-    max-width: 750px;
-
-    margin: 0 auto 20px;
-
-    line-height: 1.8;
+.service-item img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: 18px;
 }
 
-
-/* ABOUT PAGE LISTS */
-
-.about-section ul {
-    list-style: none;
-
-    max-width: 700px;
-
-    margin: 0 auto;
-
-    padding: 0;
-}
-
-
-/* ABOUT PAGE LIST ITEMS */
-
-.about-section li {
-    color: #333;
-
-    font-size: 1.1rem;
-
-    line-height: 1.8;
-
-    margin-bottom: 15px;
-}
-
-
-/* CHECK MARKS */
-
-.about-section li::before {
-    content: "✓";
-
-    color: #008c95;
-
-    font-weight: bold;
-
-    margin-right: 10px;
-}
-
-
-/* MOBILE ABOUT PAGE */
-
-@media (max-width: 600px) {
-
-    .about-banner {
-        min-height: 300px;
-    }
-
-    .about-banner-content h2 {
-        font-size: 2.8rem;
-    }
-
-    .about-section {
-        padding: 40px 20px;
-    }
-
-    .about-section h2 {
-        font-size: 2rem;
-    }
-
-    .about-section p,
-    .about-section li {
-        font-size: 1rem;
-    }
-}
-
-
-/* SERVICES PAGE */
-
-.services-section {
-    text-align: center;
-}
-
-
-/* Heading and paragraph area */
-
-.services-introduction {
-    background-color: #008c95;
-    color: white;
-    text-align: center;
-    padding: 25px 20px;
-    margin-bottom: 40px;
-}
-
-.services-introduction h2 {
-    color: white;
+.service-item h2,
+.service-item h3 {
     margin-bottom: 10px;
 }
 
-.services-introduction p {
-    color: white;
-    margin-bottom: 0;
+.before-after,
+.whitening-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
-
-/* Service headings */
-
-.services-section h3 {
+.services-cta {
     text-align: center;
-    margin-top: 30px;
+    padding: 75px 6%;
+    background: var(--teal-light);
+}
+
+.services-cta h2 {
+    font-size: 2.4rem;
     margin-bottom: 15px;
 }
 
 
-/* Centre service pictures */
+/* 13. TEAM PAGE
+========================================================= */
 
-.services-section img {
+.team-section {
+    padding: 85px 6%;
+    background: var(--soft-bg);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.team-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-md);
+}
+
+.team-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.team-card-content {
+    padding: 27px;
+}
+
+.team-card h2,
+.team-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 7px;
+}
+
+.team-card .role {
+    color: var(--teal);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.team-card p {
+    font-size: 0.92rem;
+}
+
+
+/* 14. CONTACT PAGE
+========================================================= */
+
+.contact-section {
+    padding: 85px 6%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.contact-card {
+    padding: 32px;
+    background: var(--soft-bg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-card h2,
+.contact-card h3 {
+    font-size: 1.55rem;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    margin-bottom: 10px;
+}
+
+.contact-card a {
+    color: var(--teal-dark);
+    font-weight: 700;
+}
+
+.map-container,
+.map-wrapper {
+    max-width: 1150px;
+    margin: 40px auto 0;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.map-container iframe,
+.map-wrapper iframe {
     display: block;
-    margin: 0 auto 30px;
+    width: 100%;
+    height: 400px;
+    border: 0;
 }
 
 
-/* TEAM PAGE */
+/* 15. ENQUIRY PAGE AND FORM
+========================================================= */
 
-.team-introduction {
-    background-color: #008c95;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-bottom: 40px;
+.enquiry-section {
+    padding: 85px 6%;
+    background: var(--soft-bg);
 }
 
-.team-introduction h1 {
-    color: white;
-    text-align: center;
-    margin: 0 0 15px 0;
+.enquiry-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 42px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
 }
 
-.team-intro {
-    font-family: "Times New Roman", serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 1.8;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
+.enquiry-container h2 {
+    font-size: 2.1rem;
+    margin-bottom: 12px;
 }
 
-
-/* CENTRE ALL TEAM CONTENT */
-
-main section {
-    text-align: center;
+.enquiry-container > p {
+    margin-bottom: 28px;
 }
 
-main section h2 {
-    text-align: center;
+.enquiry-form,
+form {
+    width: 100%;
 }
 
-main section p {
-    text-align: center;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+.form-group {
+    margin-bottom: 21px;
 }
 
-
-/* CENTRE ALL TEAM PICTURES */
-
-main section img {
+.form-group label,
+form label {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select,
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 14px 16px;
+    background: #fbfdfd;
+    border: 1px solid #d6e1e1;
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    outline: none;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus,
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: var(--teal);
+    box-shadow: 0 0 0 4px rgba(7, 139, 145, 0.1);
+}
+
+.form-group textarea,
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background: var(--teal);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+
+form button[type="submit"]:hover {
+    background: var(--teal-dark);
+    transform: translateY(-2px);
+}
+
+.form-notice {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: var(--radius-sm);
+    background: var(--teal-light);
+    color: var(--navy);
+    font-size: 0.9rem;
+}
+
+
+/* 16. FAQ PAGE
+========================================================= */
+
+.faq-section {
+    max-width: 950px;
+    margin: auto;
+    padding: 85px 6%;
+}
+
+.faq-list {
+    display: grid;
+    gap: 15px;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    border: none;
+    background: var(--white);
+    color: var(--navy);
+    padding: 23px 25px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.faq-question:hover {
+    color: var(--teal);
+    background: var(--teal-light);
+}
+
+.faq-question::after {
+    content: '+';
+    color: var(--teal);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.faq-question[aria-expanded="true"]::after {
+    content: '−';
+}
+
+.faq-answer {
+    padding: 0 25px 23px;
+}
+
+.faq-answer p {
+    font-size: 0.95rem;
+}
+
+
+/* 17. GALLERY PAGE
+========================================================= */
+
+.gallery-hero {
+    background:
+        radial-gradient(circle at top right, rgba(213, 169, 40, 0.18), transparent 35%),
+        linear-gradient(135deg, var(--navy), #24566b);
+}
+
+.gallery-section {
+    background: var(--soft-bg);
+}
+
+.practice-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.gallery-item {
+    position: relative;
+    background: var(--white);
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow-md);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    cursor: zoom-in;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.045);
+}
+
+.gallery-item figcaption {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 22px;
+}
+
+.gallery-item figcaption span {
+    color: var(--gold);
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+.gallery-item figcaption h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.gallery-contact {
+    text-align: center;
+    background: var(--teal-light);
+}
+
+.gallery-contact-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.gallery-contact h2 {
+    font-size: 2.5rem;
+    margin: 12px 0;
+}
+
+.gallery-contact p {
     margin-bottom: 25px;
 }
 
-/*CONTACT, ENQUIRY AND FAQ INTRODUCTIONS*/
 
-/* CONTACT PAGE INTRODUCTION */
+/* 18. FOOTER
+========================================================= */
 
-.contact-introduction {
-    background-color: #008c95;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-bottom: 40px;
+.site-footer,
+footer {
+    background: var(--navy);
+    color: var(--white);
 }
 
-.contact-introduction h1 {
-    color: white;
-    text-align: center;
-    margin: 0 0 15px 0;
+.footer-content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 55px 6%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px;
 }
 
-.contact-intro {
-    font-family: "Times New Roman", serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 1.8;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
+.footer-content h2,
+.footer-content h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+    font-size: 1.35rem;
 }
 
-
-/* CONTACT PAGE CONTENT */
-
-.contact-content {
-    text-align: center;
+.footer-content p,
+.footer-content a,
+.footer-content li {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.9rem;
 }
 
-.contact-content h3 {
-    text-align: center;
+.footer-content a:hover {
+    color: var(--gold);
 }
 
-.contact-content p {
+.footer-bottom {
+    padding: 20px 6%;
     text-align: center;
+    background: #10213b;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contact-content iframe {
-    display: block;
-    margin: 0 auto 30px;
-}
-
-
-/* ENQUIRY PAGE INTRODUCTION */
-
-.enquiry-introduction {
-    background-color: #008c95;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-bottom: 40px;
-}
-
-.enquiry-introduction h2 {
-    color: white;
-    text-align: center;
-    margin: 0 0 15px 0;
-}
-
-.enquiry-intro {
-    font-family: "Times New Roman", serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 1.8;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
 }
 
 
-/* ENQUIRY PAGE CONTENT */
+/* 19. BACK TO TOP BUTTON
+========================================================= */
 
-.enquiry-content {
+#backToTop,
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: var(--teal);
+    color: var(--white);
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-md);
+    z-index: 900;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: var(--transition);
+}
+
+#backToTop.visible,
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#backToTop:hover,
+.back-to-top:hover {
+    background: var(--navy);
+    transform: translateY(-4px);
+}
+
+
+/* 20. JAVASCRIPT SCROLL REVEAL
+========================================================= */
+
+.js-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.js-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* 21. IMAGE LIGHTBOX
+========================================================= */
+
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(8, 19, 34, 0.94);
+}
+
+.lightbox-content {
+    max-width: 1000px;
+    max-height: 90vh;
     text-align: center;
 }
 
-.enquiry-content form {
-    text-align: center;
+.lightbox-image {
+    max-width: 100%;
+    max-height: 75vh;
+    margin: auto;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+}
+
+.lightbox-caption {
+    color: var(--white);
+    margin-top: 15px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-size: 2.5rem;
 }
 
 
-/* FAQ PAGE INTRODUCTION */
+/* 22. ACCESSIBILITY AND FOCUS
+========================================================= */
 
-.faq-introduction {
-    background-color: #008c95;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    margin-bottom: 40px;
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
 }
 
-.faq-introduction h2 {
-    color: white;
-    text-align: center;
-    margin: 0 0 15px 0;
-}
-
-.faq-intro {
-    font-family: "Times New Roman", serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 1.8;
-    color: white;
-    text-align: center;
-    margin: 0 auto;
+[hidden] {
+    display: none !important;
 }
 
 
-/* FAQ PAGE CONTENT */
+/* 23. TABLET RESPONSIVENESS
+========================================================= */
 
-.faq-content {
-    text-align: center;
+@media (max-width: 1050px) {
+
+    .header-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 4%;
+    }
+
+    .main-nav,
+    nav {
+        gap: 2px;
+    }
+
+    .main-nav a,
+    nav a {
+        padding: 8px 10px;
+        font-size: 0.82rem;
+    }
+
+    .review-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .practice-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
-.faq-content article {
-    text-align: center;
+
+/* 24. MOBILE RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 650px) {
+
+    html {
+        scroll-padding-top: 150px;
+    }
+
+    .header-container {
+        padding: 12px 4%;
+    }
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo span,
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .main-nav,
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .main-nav a,
+    nav a {
+        font-size: 0.76rem;
+        padding: 7px 9px;
+    }
+
+    .hero {
+        min-height: 540px;
+        padding: 55px 5%;
+        background-position: center;
+    }
+
+    .hero-content {
+        padding: 28px 23px;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-content p {
+        font-size: 0.94rem;
+    }
+
+    .section-padding {
+        padding: 65px 5%;
+    }
+
+    .section-heading {
+        margin-bottom: 32px;
+    }
+
+    .section-heading h2 {
+        font-size: 2.1rem;
+    }
+
+    .page-hero {
+        min-height: 290px;
+        padding: 55px 6%;
+    }
+
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .review-grid,
+    .reviews-grid,
+    .services-grid,
+    .team-grid,
+    .practice-gallery,
+    .bottom-info,
+    .footer-content,
+    .contact-grid,
+    .about-values,
+    .mission-vision,
+    .about-cards,
+    .before-after,
+    .whitening-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .review-card,
+    .bottom-info > div {
+        padding: 24px;
+    }
+
+    .about-intro {
+        padding: 65px 6%;
+    }
+
+    .about-intro h2 {
+        font-size: 2rem;
+    }
+
+    .about-card,
+    .mission-card,
+    .vision-card,
+    .value-card {
+        padding: 28px;
+    }
+
+    .team-card img {
+        height: 300px;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+    .enquiry-container {
+        padding: 28px 21px;
+    }
+
+    .enquiry-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .map-container iframe,
+    .map-wrapper iframe {
+        height: 300px;
+    }
+
+    .footer-content {
+        padding: 45px 6%;
+    }
+
+    #backToTop,
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        width: 44px;
+        height: 44px;
+    }
 }
 
-.faq-content h3 {
-    text-align: center;
-}
 
-.faq-content p {
-    text-align: center;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+/* 25. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .js-reveal {
+        opacity: 1;
+        transform: none;
+    }
 }

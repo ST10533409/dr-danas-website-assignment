@@ -1,116 +1,363 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Our Team - Dr Dana's Practice</title>
+    <meta name="description" content="Meet the team at Dr Dana Dentist.">
 
-    <!-- Link to external CSS stylesheet -->
+    <title>Our Team | Dr Dana Dentist</title>
+
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <!-- Header and navigation section -->
-    <header>
+    <!-- HEADER -->
 
-        <div class="logo">
+    <header class="site-header">
+
+        <a href="index.html" class="logo" aria-label="Dr Dana Dentist homepage">
+
             <img src="images/logo.png" alt="Dr Dana Dentist Logo">
-            <h1>Dr Dana Dentist</h1>
-        </div>
 
-        <nav>
+            <span>Dr Dana Dentist</span>
+
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="services.html">Services</a>
-            <a href="team.html">Our Team</a>
+            <a href="team.html" aria-current="page">Our Team</a>
             <a href="contact.html">Contact Us</a>
             <a href="enquiry.html">Enquiry</a>
-            <a href="faq.html">FAQs</a>
+            <a href="faq.html#faqs">FAQs</a>
+            <a href="gallery.html">Gallery</a>
+
         </nav>
 
     </header>
 
 
-    <!-- Main content -->
     <main>
 
-        <section>
+        <!-- PAGE INTRODUCTION -->
 
-            <!-- TEAL INTRODUCTION AREA ONLY -->
-            <div class="team-introduction">
+        <section class="page-hero team-hero">
+
+            <div class="page-hero-content">
+
+                <span class="section-label">
+                    THE PEOPLE BEHIND YOUR CARE
+                </span>
 
                 <h1>Meet Our Team</h1>
 
-                <p class="team-intro">
-                    Our dedicated team at Dr. Dana's Practice is committed to providing
-                    professional, friendly and patient-focused dental care. Each member of
-                    our team plays an important role in creating a comfortable and welcoming
-                    experience for every patient.
+                <p>
+                    Get to know the people who contribute to
+                    creating a welcoming experience at our practice.
                 </p>
 
             </div>
 
+        </section>
 
-            <!-- Dr. Dana -->
-            <h2>Dr. Dana - Dentist</h2>
 
-            <img src="images/Dr.Dana.png"
-                 alt="Female Dentist"
-                 width="300">
+        <!-- TEAM INTRODUCTION -->
 
-            <p>
-                Dr. Dana is a young and passionate female dentist and co-founder of
-                Dr. Dana's Practice. She studied at the University of Western Cape (UWC),
-                where she completed her Bachelor of Dental Surgery (BDS) qualification.
-                She is an ambitious and inspiring woman who is dedicated to using her
-                knowledge and skills to provide professional, patient-focused dental care.
-                She aims to help patients feel confident about their smiles and receive
-                quality dental care at every stage of their treatment.
+        <section class="team-introduction js-reveal">
+
+            <span class="section-label">
+                OUR PEOPLE
+            </span>
+
+            <h2>Meet the Team Behind Your Smile</h2>
+
+            <p class="team-intro">
+                Our team is dedicated to making your experience
+                at Dr Dana Dentist comfortable and welcoming.
+                Get to know the individuals who make up our practice.
             </p>
 
-
-            <!-- Receptionist -->
-            <h2>Receptionist</h2>
-
-            <img src="images/receptionist.png"
-                 alt="Receptionist"
-                 width="300">
-
-            <p>
-                Our receptionist is always available to assist patients with
-                appointments, enquiries, and general information.
-            </p>
+        </section>
 
 
-            <!-- Dental Assistant -->
-            <h2>Dental Assistant</h2>
+        <!-- TEAM PROFILES -->
 
-            <img src="images/dental-assistant.png"
-                 alt="Dental Assistant"
-                 width="300">
+        <section class="team-section js-reveal">
 
-            <p>
-                Our dental assistant supports the dentist during procedures
-                and helps ensure that every patient receives excellent care.
-            </p>
+            <div class="team-grid">
+
+
+                <!-- DR DANA -->
+
+                <article class="team-card featured-team-card">
+
+                    <div class="team-image">
+
+                        <img
+                            src="images/Dr.Dana.png"
+                            alt="Dr Dana, Dentist and Co-founder"
+                            loading="lazy"
+                        >
+
+                        <span class="team-number">01</span>
+
+                    </div>
+
+                    <div class="team-card-content">
+
+                        <span class="team-role">
+                            DENTIST & CO-FOUNDER
+                        </span>
+
+                        <h2>Dr. Dana</h2>
+
+                        <p>
+                            Dr. Dana is a young, passionate female dentist
+                            and co-founder of the practice. She studied at
+                            the University of the Western Cape (UWC), where
+                            she completed her Bachelor of Dental Surgery (BDS).
+                        </p>
+
+                        <p>
+                            She is ambitious and inspiring, with a
+                            patient-focused approach to dental care.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- RECEPTIONIST -->
+
+                <article class="team-card">
+
+                    <div class="team-image">
+
+                        <img
+                            src="images/receptionist.png"
+                            alt="Dr Dana Dentist receptionist"
+                            loading="lazy"
+                        >
+
+                        <span class="team-number">02</span>
+
+                    </div>
+
+                    <div class="team-card-content">
+
+                        <span class="team-role">
+                            FRONT DESK
+                        </span>
+
+                        <h2>Receptionist</h2>
+
+                        <p>
+                            Our receptionist is an important part of
+                            the patient experience, helping visitors
+                            feel welcomed and assisting with
+                            communication and appointments.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DENTAL ASSISTANT -->
+
+                <article class="team-card">
+
+                    <div class="team-image">
+
+                        <img
+                            src="images/dental-assistant.png"
+                            alt="Dr Dana Dentist dental assistant"
+                            loading="lazy"
+                        >
+
+                        <span class="team-number">03</span>
+
+                    </div>
+
+                    <div class="team-card-content">
+
+                        <span class="team-role">
+                            DENTAL SUPPORT
+                        </span>
+
+                        <h2>Dental Assistant</h2>
+
+                        <p>
+                            Our dental assistant supports the practice
+                            and contributes to maintaining a comfortable
+                            and organised environment during patient visits.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CLOSING SECTION -->
+
+        <section class="team-cta js-reveal">
+
+            <div>
+
+                <span class="section-label">
+                    WE LOOK FORWARD TO MEETING YOU
+                </span>
+
+                <h2>Your comfort matters to us.</h2>
+
+                <p>
+                    Contact our practice if you would like to
+                    make an enquiry or arrange a consultation.
+                </p>
+
+                <a href="enquiry.html" class="btn btn-primary">
+                    Make an Enquiry
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- Footer -->
-    <footer>
+    <!-- FOOTER -->
 
-        <p>&copy; 2026 Dr Dana's Practice. All rights reserved.</p>
+    <section class="bottom-info">
+
+        <div class="info-card">
+
+            <span class="footer-label">EXPLORE</span>
+
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">GET IN TOUCH</span>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-item">
+
+                <strong>Address</strong>
+
+                <p>Amalinda, KuGompo City, 5247</p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>Phone</strong>
+
+                <p>
+                    <a href="tel:0681336322">
+                        068 133 6322
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>WhatsApp</strong>
+
+                <p>
+                    <a href="https://wa.me/27681336322"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Chat with us on WhatsApp
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">WHEN TO VISIT</span>
+
+            <h2>Trading Hours</h2>
+
+            <p class="hours-item">
+                <strong>Monday - Friday</strong>
+                <span>8:00 AM - 17:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Saturday</strong>
+                <span>9:00 AM - 13:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Sunday</strong>
+                <span>Closed</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        type="button"
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+        hidden
+    >
+        &uarr;
+    </button>
+
+
+    <!-- COPYRIGHT -->
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Dr Dana Dentist.
+            All rights reserved.
+        </p>
+
+        <a href="index.html">Back to Home</a>
 
     </footer>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 

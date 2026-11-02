@@ -1,116 +1,379 @@
-<!-- Document type declaration -->
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 
-<!-- Head section -->
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Website title -->
-    <title>Contact Us - Dr Dana's Practice</title>
+    <meta name="description" content="Contact Dr Dana Dentist for enquiries, directions and practice information.">
 
-    <!-- Link to external CSS stylesheet -->
+    <title>Contact Us | Dr Dana Dentist</title>
+
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <!-- Header and navigation section -->
-    <header>
+    <!-- HEADER -->
 
-        <div class="logo">
+    <header class="site-header">
+
+        <a href="index.html" class="logo" aria-label="Dr Dana Dentist homepage">
 
             <img src="images/logo.png" alt="Dr Dana Dentist Logo">
 
-            <h1>Dr Dana Dentist</h1>
+            <span>Dr Dana Dentist</span>
 
-        </div>
+        </a>
 
-        <nav>
+        <nav class="main-nav" aria-label="Main navigation">
 
             <a href="index.html">Home</a>
-
             <a href="about.html">About Us</a>
-
             <a href="services.html">Services</a>
-
             <a href="team.html">Our Team</a>
-
-            <a href="contact.html">Contact Us</a>
-
+            <a href="contact.html" aria-current="page">Contact Us</a>
             <a href="enquiry.html">Enquiry</a>
-
-            <a href="faq.html">FAQs</a>
+            <a href="faq.html#faqs">FAQs</a>
+            <a href="gallery.html">Gallery</a>
 
         </nav>
 
     </header>
 
 
-    <!-- Main content -->
     <main>
 
-        <!-- Contact page introduction -->
-        <section class="contact-introduction">
+        <!-- PAGE INTRODUCTION -->
 
-            <h1>Contact Us</h1>
+        <section class="page-hero contact-hero">
 
-            <p class="contact-intro">
-                We'd love to hear from you. Contact us using any of the methods below.
+            <div class="page-hero-content">
+
+                <span class="section-label">
+                    WE ARE HERE TO HELP
+                </span>
+
+                <h1>Get In Touch</h1>
+
+                <p>
+                    Have a question or need more information?
+                    We'd love to hear from you.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT INTRODUCTION -->
+
+        <section class="contact-introduction js-reveal">
+
+            <span class="section-label">
+                CONTACT INFORMATION
+            </span>
+
+            <h2>Let's Start a Conversation</h2>
+
+            <p>
+                Find our practice details below or use the
+                enquiry page to send us your questions.
             </p>
 
         </section>
 
 
-        <!-- Contact information -->
-        <section class="contact-content">
+        <!-- CONTACT INFORMATION CARDS -->
 
-            <!-- Telephone number -->
-            <h3>Phone Number</h3>
+        <section class="contact-details-section js-reveal">
 
-            <p>
-                <a href="tel:0681336322">
-                    068 133 6322
+            <div class="contact-details-grid">
+
+
+                <!-- ADDRESS -->
+
+                <article class="contact-detail-card">
+
+                    <div class="contact-icon" aria-hidden="true">
+                        <span>⌖</span>
+                    </div>
+
+                    <span class="contact-card-label">
+                        FIND US
+                    </span>
+
+                    <h2>Our Location</h2>
+
+                    <p>
+                        Amalinda, KuGompo City, 5247
+                    </p>
+
+                    <a
+                        href="https://www.google.com/maps?q=Amalinda,+KuGompo+City,+5247"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-link"
+                    >
+                        Get Directions
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </article>
+
+
+                <!-- PHONE -->
+
+                <article class="contact-detail-card">
+
+                    <div class="contact-icon" aria-hidden="true">
+                        <span>☎</span>
+                    </div>
+
+                    <span class="contact-card-label">
+                        GIVE US A CALL
+                    </span>
+
+                    <h2>Phone</h2>
+
+                    <p>
+                        068 133 6322
+                    </p>
+
+                    <a
+                        href="tel:0681336322"
+                        class="text-link"
+                    >
+                        Call Our Practice
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </article>
+
+
+                <!-- WHATSAPP -->
+
+                <article class="contact-detail-card">
+
+                    <div class="contact-icon" aria-hidden="true">
+                        <span>✉</span>
+                    </div>
+
+                    <span class="contact-card-label">
+                        CHAT WITH US
+                    </span>
+
+                    <h2>WhatsApp</h2>
+
+                    <p>
+                        Contact us through WhatsApp.
+                    </p>
+
+                    <a
+                        href="https://wa.me/27681336322"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-link"
+                    >
+                        Open WhatsApp
+                        <span aria-hidden="true">&rarr;</span>
+                    </a>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- MAP AND LOCATION -->
+
+        <section class="location-section js-reveal">
+
+            <div class="location-heading">
+
+                <span class="section-label">
+                    FIND OUR PRACTICE
+                </span>
+
+                <h2>Where to Find Us</h2>
+
+                <p>
+                    Use the map below to explore the area
+                    around our practice.
+                </p>
+
+            </div>
+
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Amalinda,+KuGompo+City,+5247&output=embed"
+                    title="Map showing Amalinda, KuGompo City"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT CALL TO ACTION -->
+
+        <section class="contact-cta js-reveal">
+
+            <div>
+
+                <span class="section-label">
+                    WE WOULD LOVE TO HEAR FROM YOU
+                </span>
+
+                <h2>Have a question for us?</h2>
+
+                <p>
+                    Visit our enquiry page and tell us
+                    how we can assist you.
+                </p>
+
+                <a href="enquiry.html" class="btn btn-primary">
+                    Send an Enquiry
+                    <span aria-hidden="true">&rarr;</span>
                 </a>
-            </p>
 
-
-            <!-- Address -->
-            <h3>Address</h3>
-
-            <p>
-                Amalinda, KuGompo City, 5247
-            </p>
-
-
-            <!-- Google Maps section -->
-            <h3>Location</h3>
-
-            <iframe
-                src="https://www.google.com/maps?q=Amalinda,+KuGompo+City,+5247&output=embed"
-                width="600"
-                height="450"
-                title="Dr Dana Dentist Location">
-            </iframe>
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- Footer section -->
-    <footer>
+    <!-- FOOTER -->
+
+    <section class="bottom-info">
+
+        <div class="info-card">
+
+            <span class="footer-label">EXPLORE</span>
+
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">GET IN TOUCH</span>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-item">
+
+                <strong>Address</strong>
+
+                <p>Amalinda, KuGompo City, 5247</p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>Phone</strong>
+
+                <p>
+                    <a href="tel:0681336322">
+                        068 133 6322
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>WhatsApp</strong>
+
+                <p>
+                    <a href="https://wa.me/27681336322"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Chat with us on WhatsApp
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">WHEN TO VISIT</span>
+
+            <h2>Trading Hours</h2>
+
+            <p class="hours-item">
+                <strong>Monday - Friday</strong>
+                <span>8:00 AM - 17:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Saturday</strong>
+                <span>9:00 AM - 13:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Sunday</strong>
+                <span>Closed</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        type="button"
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+        hidden
+    >
+        &uarr;
+    </button>
+
+
+    <!-- COPYRIGHT -->
+
+    <footer class="site-footer">
 
         <p>
-            &copy; 2026 Dr Dana's Practice. All rights reserved.
+            &copy; 2026 Dr Dana Dentist.
+            All rights reserved.
         </p>
 
+        <a href="index.html">Back to Home</a>
+
     </footer>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 

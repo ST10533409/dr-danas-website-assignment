@@ -1,156 +1,438 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Services - Dr. Dana's Practice</title>
+    <meta name="description" content="Explore the dental services offered at Dr Dana Dentist.">
 
-    <!-- Link to external CSS stylesheet -->
+    <title>Our Services | Dr Dana Dentist</title>
+
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
 
+    <!-- HEADER -->
 
-    <!-- Header and navigation section -->
+    <header class="site-header">
 
-    <header>
-
-        <div class="logo">
+        <a href="index.html" class="logo" aria-label="Dr Dana Dentist homepage">
 
             <img src="images/logo.png" alt="Dr Dana Dentist Logo">
 
-            <h1>Dr Dana Dentist</h1>
+            <span>Dr Dana Dentist</span>
 
-        </div>
+        </a>
 
-
-        <nav>
+        <nav class="main-nav" aria-label="Main navigation">
 
             <a href="index.html">Home</a>
-
             <a href="about.html">About Us</a>
-
-            <a href="services.html">Services</a>
-
+            <a href="services.html" aria-current="page">Services</a>
             <a href="team.html">Our Team</a>
-
             <a href="contact.html">Contact Us</a>
-
             <a href="enquiry.html">Enquiry</a>
-
-            <a href="faq.html">FAQs</a>
+            <a href="faq.html#faqs">FAQs</a>
+            <a href="gallery.html">Gallery</a>
 
         </nav>
 
     </header>
 
 
-
-    <!-- Main Services Content -->
-
     <main>
 
-        <section class="services-section">
+        <!-- PAGE INTRODUCTION -->
 
+        <section class="page-hero services-hero">
 
-            <!-- Services Introduction -->
+            <div class="page-hero-content">
 
-            <div class="services-introduction">
+                <span class="section-label">
+                    CARING FOR YOUR SMILE
+                </span>
 
-                <h2>Dental Services We Offer</h2>
+                <h1>Our Dental Services</h1>
 
                 <p>
-                    Dr. Dana's Practice provides professional and friendly
-                    dental services to help patients maintain healthy teeth
-                    and gums.
+                    Discover the dental services available at
+                    Dr Dana Dentist. We are committed to providing
+                    quality care in a welcoming environment.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICES INTRODUCTION -->
+
+        <section class="services-introduction js-reveal">
+
+            <span class="section-label">
+                WHAT WE OFFER
+            </span>
+
+            <h2>Explore Our Services</h2>
+
+            <p>
+                From general dental care to specialised treatments,
+                explore the services offered at our practice.
+            </p>
+
+        </section>
+
+
+        <!-- SERVICES GRID -->
+
+        <section class="services-section js-reveal">
+
+            <div class="services-grid">
+
+
+                <!-- GENERAL DENTISTRY -->
+
+                <article class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="images/general-dentistry.jpg"
+                            alt="General dentistry"
+                            loading="lazy"
+                        >
+
+                        <span class="service-number">01</span>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-category">
+                            DENTAL CARE
+                        </span>
+
+                        <h2>General Dentistry</h2>
+
+                        <p>
+                            Explore our general dentistry services
+                            and dental care options.
+                        </p>
+
+                        <a href="enquiry.html" class="text-link">
+                            Make an Enquiry
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TEETH CLEANING -->
+
+                <article class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="images/teeth-cleaning.jpg"
+                            alt="Teeth cleaning"
+                            loading="lazy"
+                        >
+
+                        <span class="service-number">02</span>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-category">
+                            ORAL HYGIENE
+                        </span>
+
+                        <h2>Teeth Cleaning</h2>
+
+                        <p>
+                            Discover our professional teeth cleaning
+                            service.
+                        </p>
+
+                        <a href="enquiry.html" class="text-link">
+                            Make an Enquiry
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ORTHODONTICS -->
+
+                <article class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="images/orthodontics.jpg"
+                            alt="Orthodontic dental treatment"
+                            loading="lazy"
+                        >
+
+                        <span class="service-number">03</span>
+
+                    </div>
+
+                    <div class="service-card-content">
+
+                        <span class="service-category">
+                            DENTAL TREATMENT
+                        </span>
+
+                        <h2>Orthodontics</h2>
+
+                        <p>
+                            Explore our orthodontic service and
+                            available treatment options.
+                        </p>
+
+                        <a href="enquiry.html" class="text-link">
+                            Make an Enquiry
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TEETH WHITENING BEFORE AND AFTER -->
+
+        <section class="whitening-section js-reveal">
+
+            <div class="whitening-heading">
+
+                <span class="section-label">
+                    A CLOSER LOOK
+                </span>
+
+                <h2>Teeth Whitening</h2>
+
+                <p>
+                    Explore the before-and-after photographs
+                    from our teeth whitening section.
                 </p>
 
             </div>
 
 
-
-            <!-- General Dentistry -->
-
-            <h3>General Dentistry</h3>
-
-            <img
-                src="images/general-dentistry.jpg"
-                alt="General Dentistry"
-                width="400"
-            >
+            <div class="whitening-gallery">
 
 
+                <!-- BEFORE -->
 
-            <!-- Teeth Cleaning -->
+                <figure class="whitening-image">
 
-            <h3>Teeth Cleaning</h3>
+                    <div class="whitening-photo">
 
-            <img
-                src="images/teeth-cleaning.jpg"
-                alt="Teeth Cleaning"
-                width="400"
-            >
+                        <img
+                            src="images/whitening-before.jpg"
+                            alt="Teeth whitening before photograph"
+                            loading="lazy"
+                        >
 
+                    </div>
 
+                    <figcaption>
+                        <span class="whitening-tag">BEFORE</span>
+                        <h3>Before Treatment</h3>
+                    </figcaption>
 
-            <!-- Teeth Whitening Before -->
-
-            <h3>Teeth Whitening (Before)</h3>
-
-            <img
-                src="images/whitening-before.jpg"
-                alt="Teeth Whitening Before"
-                width="400"
-            >
+                </figure>
 
 
+                <!-- AFTER -->
 
-            <!-- Teeth Whitening After -->
+                <figure class="whitening-image">
 
-            <h3>Teeth Whitening (After)</h3>
+                    <div class="whitening-photo">
 
-            <img
-                src="images/whitening-after.jpg"
-                alt="Teeth Whitening After"
-                width="400"
-            >
+                        <img
+                            src="images/whitening-after.jpg"
+                            alt="Teeth whitening after photograph"
+                            loading="lazy"
+                        >
+
+                    </div>
+
+                    <figcaption>
+                        <span class="whitening-tag">AFTER</span>
+                        <h3>After Treatment</h3>
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </section>
 
 
+        <!-- ENQUIRY CALL TO ACTION -->
 
-            <!-- Orthodontics -->
+        <section class="services-cta js-reveal">
 
-            <h3>Orthodontics</h3>
+            <div>
 
-            <img
-                src="images/orthodontics.jpg"
-                alt="Orthodontics"
-                width="400"
-            >
+                <span class="section-label">
+                    HAVE QUESTIONS?
+                </span>
 
+                <h2>Let us help you get started.</h2>
+
+                <p>
+                    Contact our practice to make an enquiry
+                    about our dental services.
+                </p>
+
+                <a href="enquiry.html" class="btn btn-primary">
+                    Make an Enquiry
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
+
+            </div>
 
         </section>
 
     </main>
 
 
+    <!-- FOOTER -->
 
-    <!-- Footer -->
+    <section class="bottom-info">
 
-    <footer>
+        <div class="info-card">
+
+            <span class="footer-label">EXPLORE</span>
+
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">GET IN TOUCH</span>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-item">
+
+                <strong>Address</strong>
+
+                <p>Amalinda, KuGompo City, 5247</p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>Phone</strong>
+
+                <p>
+                    <a href="tel:0681336322">
+                        068 133 6322
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>WhatsApp</strong>
+
+                <p>
+                    <a href="https://wa.me/27681336322"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Chat with us on WhatsApp
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">WHEN TO VISIT</span>
+
+            <h2>Trading Hours</h2>
+
+            <p class="hours-item">
+                <strong>Monday - Friday</strong>
+                <span>8:00 AM - 17:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Saturday</strong>
+                <span>9:00 AM - 13:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Sunday</strong>
+                <span>Closed</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        type="button"
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+        hidden
+    >
+        &uarr;
+    </button>
+
+
+    <!-- COPYRIGHT -->
+
+    <footer class="site-footer">
 
         <p>
-            &copy; 2026 Dr Dana's Practice. All rights reserved.
+            &copy; 2026 Dr Dana Dentist.
+            All rights reserved.
         </p>
+
+        <a href="index.html">Back to Home</a>
 
     </footer>
 
+
+    <script src="js/script.js"></script>
 
 </body>
 

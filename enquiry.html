@@ -1,168 +1,451 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Enquiry - Dr. Dana's Practice</title>
+    <meta name="description" content="Make an enquiry at Dr Dana Dentist. Get in touch with our practice.">
 
-    <!-- Link to external CSS stylesheet -->
+    <title>Make an Enquiry | Dr Dana Dentist</title>
+
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <!-- Header and navigation section -->
-    <header>
+    <!-- HEADER -->
 
-        <div class="logo">
+    <header class="site-header">
+
+        <a href="index.html" class="logo" aria-label="Dr Dana Dentist homepage">
 
             <img src="images/logo.png" alt="Dr Dana Dentist Logo">
 
-            <h1>Dr Dana Dentist</h1>
+            <span>Dr Dana Dentist</span>
 
-        </div>
+        </a>
 
-        <nav>
+        <nav class="main-nav" aria-label="Main navigation">
 
             <a href="index.html">Home</a>
-
             <a href="about.html">About Us</a>
-
             <a href="services.html">Services</a>
-
             <a href="team.html">Our Team</a>
-
             <a href="contact.html">Contact Us</a>
-
-            <a href="enquiry.html">Enquiry</a>
-
-            <a href="faq.html">FAQs</a>
+            <a href="enquiry.html" aria-current="page">Enquiry</a>
+            <a href="faq.html#faqs">FAQs</a>
+            <a href="gallery.html">Gallery</a>
 
         </nav>
 
     </header>
 
 
-    <!-- Main content -->
     <main>
 
-        <!-- Enquiry introduction -->
-        <section class="enquiry-introduction">
+        <!-- PAGE INTRODUCTION -->
 
-            <h2>Send Us an Enquiry</h2>
+        <section class="page-hero enquiry-hero">
 
-            <p class="enquiry-intro">
-                Please complete the form below and provide your details so we can assist you.
+            <div class="page-hero-content">
+
+                <span class="section-label">
+                    WE ARE HAPPY TO ASSIST
+                </span>
+
+                <h1>Make an Enquiry</h1>
+
+                <p>
+                    Have a question or want to know more about
+                    our dental services? Send us an enquiry.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENQUIRY INTRODUCTION -->
+
+        <section class="enquiry-introduction js-reveal">
+
+            <span class="section-label">
+                GET IN TOUCH
+            </span>
+
+            <h2>How Can We Help You?</h2>
+
+            <p>
+                Complete the form below with your details
+                and message.
             </p>
 
         </section>
 
 
-        <!-- Enquiry form -->
-        <section class="enquiry-content">
+        <!-- ENQUIRY FORM SECTION -->
 
-            <form>
+        <section class="enquiry-section js-reveal">
 
-                <label for="fullname">
-                    Full Name:
-                </label>
-
-                <br>
-
-                <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    required>
-
-                <br><br>
+            <div class="enquiry-layout">
 
 
-                <label for="email">
-                    Email Address:
-                </label>
+                <!-- FORM INFORMATION -->
 
-                <br>
+                <aside class="enquiry-aside">
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required>
+                    <span class="section-label">
+                        DR DANA DENTIST
+                    </span>
 
-                <br><br>
+                    <h2>Let's Talk About Your Smile.</h2>
 
+                    <p>
+                        We welcome your questions and enquiries.
+                        Provide your contact details so that your
+                        enquiry can be reviewed.
+                    </p>
 
-                <label for="phone">
-                    Phone Number:
-                </label>
+                    <div class="enquiry-aside-divider"></div>
 
-                <br>
+                    <div class="enquiry-contact-item">
 
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone">
+                        <span class="enquiry-contact-icon">
+                            ☎
+                        </span>
 
-                <br><br>
+                        <div>
 
+                            <strong>Call Us</strong>
 
-                <label for="subject">
-                    Subject:
-                </label>
+                            <a href="tel:0681336322">
+                                068 133 6322
+                            </a>
 
-                <br>
+                        </div>
 
-                <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    required>
-
-                <br><br>
+                    </div>
 
 
-                <label for="message">
-                    Your Enquiry:
-                </label>
+                    <div class="enquiry-contact-item">
 
-                <br>
+                        <span class="enquiry-contact-icon">
+                            ⌖
+                        </span>
 
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    cols="30"
-                    required></textarea>
+                        <div>
 
-                <br><br>
+                            <strong>Visit Us</strong>
+
+                            <p>
+                                Amalinda, KuGompo City, 5247
+                            </p>
+
+                        </div>
+
+                    </div>
 
 
-                <button type="submit">
-                    Submit Enquiry
-                </button>
+                    <div class="enquiry-contact-item">
 
-            </form>
+                        <span class="enquiry-contact-icon">
+                            ✉
+                        </span>
+
+                        <div>
+
+                            <strong>WhatsApp</strong>
+
+                            <a
+                                href="https://wa.me/27681336322"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Chat with us
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </aside>
+
+
+                <!-- FORM -->
+
+                <div class="enquiry-form-wrapper">
+
+                    <div class="form-heading">
+
+                        <span class="section-label">
+                            ENQUIRY FORM
+                        </span>
+
+                        <h2>Send Us a Message</h2>
+
+                        <p>
+                            Fields marked with an asterisk (*) are required.
+                        </p>
+
+                    </div>
+
+
+                    <form
+                        class="enquiry-form js-validate-form"
+                        id="enquiryForm"
+                        method="post"
+                    >
+
+                        <!-- FULL NAME -->
+
+                        <div class="form-group">
+
+                            <label for="fullname">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullname"
+                                name="fullname"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                            >
+
+                        </div>
+
+
+                        <!-- SUBJECT -->
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What is your enquiry about?"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="form-group form-group-full">
+
+                            <label for="message">
+                                Your Message *
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- SUBMIT BUTTON -->
+
+                        <div class="form-submit">
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                            >
+                                Submit Enquiry
+                                <span aria-hidden="true">&rarr;</span>
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                    <p class="form-notice">
+                        Please note: The form is currently a front-end
+                        demonstration. It will need to be connected
+                        to a backend or email service before enquiries
+                        can actually be delivered.
+                    </p>
+
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- Footer -->
-    <footer>
+    <!-- FOOTER -->
+
+    <section class="bottom-info">
+
+        <div class="info-card">
+
+            <span class="footer-label">EXPLORE</span>
+
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">GET IN TOUCH</span>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-item">
+
+                <strong>Address</strong>
+
+                <p>Amalinda, KuGompo City, 5247</p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>Phone</strong>
+
+                <p>
+                    <a href="tel:0681336322">
+                        068 133 6322
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>WhatsApp</strong>
+
+                <p>
+                    <a href="https://wa.me/27681336322"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Chat with us on WhatsApp
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">WHEN TO VISIT</span>
+
+            <h2>Trading Hours</h2>
+
+            <p class="hours-item">
+                <strong>Monday - Friday</strong>
+                <span>8:00 AM - 17:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Saturday</strong>
+                <span>9:00 AM - 13:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Sunday</strong>
+                <span>Closed</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        type="button"
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+        hidden
+    >
+        &uarr;
+    </button>
+
+
+    <!-- COPYRIGHT -->
+
+    <footer class="site-footer">
 
         <p>
-            &copy; 2026 Dr. Dana's Practice. All rights reserved.
+            &copy; 2026 Dr Dana Dentist.
+            All rights reserved.
         </p>
 
+        <a href="index.html">Back to Home</a>
+
     </footer>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 

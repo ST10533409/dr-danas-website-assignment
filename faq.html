@@ -1,167 +1,460 @@
-<!DOCTYPE html>
 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <!-- Character encoding -->
     <meta charset="UTF-8">
-
-    <!-- Makes the website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page title -->
-    <title>Dr Dana Dentist - FAQs</title>
+    <meta name="description" content="Find answers to frequently asked questions about Dr Dana Dentist.">
 
-    <!-- Link to external CSS stylesheet -->
+    <title>FAQs | Dr Dana Dentist</title>
+
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
-    <!-- Header and navigation section -->
-    <header>
+    <!-- HEADER -->
 
-        <div class="logo">
+    <header class="site-header">
+
+        <a href="index.html" class="logo" aria-label="Dr Dana Dentist homepage">
 
             <img src="images/logo.png" alt="Dr Dana Dentist Logo">
 
-            <h1>Dr Dana Dentist</h1>
+            <span>Dr Dana Dentist</span>
 
-        </div>
+        </a>
 
-
-        <!-- Navigation menu -->
-        <nav>
+        <nav class="main-nav" aria-label="Main navigation">
 
             <a href="index.html">Home</a>
-
             <a href="about.html">About Us</a>
-
             <a href="services.html">Services</a>
-
             <a href="team.html">Our Team</a>
-
             <a href="contact.html">Contact Us</a>
-
             <a href="enquiry.html">Enquiry</a>
-
-            <a href="faq.html">FAQs</a>
+            <a href="faq.html#faqs" aria-current="page">FAQs</a>
+            <a href="gallery.html">Gallery</a>
 
         </nav>
 
     </header>
 
 
-    <!-- Main content -->
     <main>
 
-        <!-- FAQ introduction -->
-        <section class="faq-introduction">
+        <!-- PAGE INTRODUCTION -->
 
-            <h2>Frequently Asked Questions</h2>
+        <section class="page-hero faq-hero">
 
-            <p class="faq-intro">
-                Find answers to some of the most frequently asked questions about our dental practice and services.
-            </p>
+            <div class="page-hero-content">
+
+                <span class="section-label">
+                    WE'RE HERE TO HELP
+                </span>
+
+                <h1>Frequently Asked Questions</h1>
+
+                <p>
+                    Find answers to some of the common questions
+                    about our dental practice and services.
+                </p>
+
+            </div>
 
         </section>
 
 
-        <!-- Frequently Asked Questions -->
-        <section class="faq-content">
+        <!-- FAQ SECTION -->
 
+        <section class="faq-section js-reveal" id="faqs">
 
-            <!-- Question 1 -->
-            <article>
+            <div class="faq-introduction">
 
-                <h3>
-                    What services does the practice offer?
-                </h3>
+                <span class="section-label">
+                    GOT QUESTIONS?
+                </span>
 
-                <p>
-                    Dr Dana's Practice offers a wide range of dental
-                    services including general dentistry, teeth cleaning,
-                    teeth whitening, dental check-ups and dental consultations.
-                </p>
-
-            </article>
-
-
-            <!-- Question 2 -->
-            <article>
-
-                <h3>
-                    How can I make an appointment?
-                </h3>
+                <h2>How Can We Help You?</h2>
 
                 <p>
-                    You can make an appointment by calling our phone number
-                    or filling out the enquiry form on our website.
+                    Browse the questions below to find
+                    the information you need.
                 </p>
 
-            </article>
+            </div>
 
 
-            <!-- Question 3 -->
-            <article>
+            <div class="faq-container">
 
-                <h3>
-                    What are the practice's trading hours?
-                </h3>
+
+                <!-- QUESTION 1 -->
+
+                <article class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-accordion
+                        aria-expanded="false"
+                        aria-controls="faq-answer-1"
+                    >
+
+                        <span class="faq-number">01</span>
+
+                        <span class="faq-question-text">
+                            What dental services do you offer?
+                        </span>
+
+                        <span class="faq-toggle" aria-hidden="true">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-1"
+                        hidden
+                    >
+
+                        <p>
+                            We offer general dentistry, teeth cleaning,
+                            teeth whitening, check-ups and consultations,
+                            as well as orthodontic services.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- QUESTION 2 -->
+
+                <article class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-accordion
+                        aria-expanded="false"
+                        aria-controls="faq-answer-2"
+                    >
+
+                        <span class="faq-number">02</span>
+
+                        <span class="faq-question-text">
+                            How can I book an appointment?
+                        </span>
+
+                        <span class="faq-toggle" aria-hidden="true">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-2"
+                        hidden
+                    >
+
+                        <p>
+                            You can contact our practice by calling
+                            068 133 6322 or by completing the enquiry
+                            form on our website.
+                        </p>
+
+                        <a href="enquiry.html" class="text-link">
+                            Go to Enquiry Form
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- QUESTION 3 -->
+
+                <article class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-accordion
+                        aria-expanded="false"
+                        aria-controls="faq-answer-3"
+                    >
+
+                        <span class="faq-number">03</span>
+
+                        <span class="faq-question-text">
+                            What are your trading hours?
+                        </span>
+
+                        <span class="faq-toggle" aria-hidden="true">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-3"
+                        hidden
+                    >
+
+                        <p>
+                            Our trading hours are:
+                        </p>
+
+                        <ul>
+                            <li>Monday - Friday: 8:00 AM - 17:00 PM</li>
+                            <li>Saturday: 9:00 AM - 13:00 PM</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+
+                    </div>
+
+                </article>
+
+
+                <!-- QUESTION 4 -->
+
+                <article class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-accordion
+                        aria-expanded="false"
+                        aria-controls="faq-answer-4"
+                    >
+
+                        <span class="faq-number">04</span>
+
+                        <span class="faq-question-text">
+                            What is your cancellation policy?
+                        </span>
+
+                        <span class="faq-toggle" aria-hidden="true">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-4"
+                        hidden
+                    >
+
+                        <p>
+                            We ask patients to contact the practice
+                            at least 24 hours in advance if they
+                            need to cancel an appointment.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- QUESTION 5 -->
+
+                <article class="faq-item">
+
+                    <button
+                        type="button"
+                        class="faq-question"
+                        data-accordion
+                        aria-expanded="false"
+                        aria-controls="faq-answer-5"
+                    >
+
+                        <span class="faq-number">05</span>
+
+                        <span class="faq-question-text">
+                            Do you accept medical aids?
+                        </span>
+
+                        <span class="faq-toggle" aria-hidden="true">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div
+                        class="faq-answer"
+                        id="faq-answer-5"
+                        hidden
+                    >
+
+                        <p>
+                            Yes, we accept all major medical aids.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- FAQ CALL TO ACTION -->
+
+        <section class="faq-cta js-reveal">
+
+            <div>
+
+                <span class="section-label">
+                    STILL HAVE QUESTIONS?
+                </span>
+
+                <h2>We're happy to hear from you.</h2>
 
                 <p>
-                    Our trading hours are Monday to Friday from 8:00 AM
-                    to 17:00 PM, and Saturday from 9:00 AM to 13:00 PM.
-                    We are closed on Sundays.
+                    If you cannot find the answer you're looking for,
+                    contact our practice or send us an enquiry.
                 </p>
 
-            </article>
+                <a href="contact.html" class="btn btn-primary">
+                    Contact Us
+                    <span aria-hidden="true">&rarr;</span>
+                </a>
 
-
-            <!-- Question 4 -->
-            <article>
-
-                <h3>
-                    What is the practice's cancellation policy?
-                </h3>
-
-                <p>
-                    Please contact us at least 24 hours in advance to
-                    cancel or reschedule your appointment.
-                </p>
-
-            </article>
-
-
-            <!-- Question 5 -->
-            <article>
-
-                <h3>
-                    Do you accept all medical aids?
-                </h3>
-
-                <p>
-                    Yes, we accept all major medical aids.
-                </p>
-
-            </article>
-
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- Footer -->
-    <footer>
+    <!-- FOOTER -->
+
+    <section class="bottom-info">
+
+        <div class="info-card">
+
+            <span class="footer-label">EXPLORE</span>
+
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">GET IN TOUCH</span>
+
+            <h2>Contact Us</h2>
+
+            <div class="contact-item">
+
+                <strong>Address</strong>
+
+                <p>Amalinda, KuGompo City, 5247</p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>Phone</strong>
+
+                <p>
+                    <a href="tel:0681336322">
+                        068 133 6322
+                    </a>
+                </p>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>WhatsApp</strong>
+
+                <p>
+                    <a href="https://wa.me/27681336322"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Chat with us on WhatsApp
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <span class="footer-label">WHEN TO VISIT</span>
+
+            <h2>Trading Hours</h2>
+
+            <p class="hours-item">
+                <strong>Monday - Friday</strong>
+                <span>8:00 AM - 17:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Saturday</strong>
+                <span>9:00 AM - 13:00 PM</span>
+            </p>
+
+            <p class="hours-item">
+                <strong>Sunday</strong>
+                <span>Closed</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        type="button"
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+        hidden
+    >
+        &uarr;
+    </button>
+
+
+    <!-- COPYRIGHT -->
+
+    <footer class="site-footer">
 
         <p>
-            &copy; 2026 Dr Dana Dentist. All rights reserved.
+            &copy; 2026 Dr Dana Dentist.
+            All rights reserved.
         </p>
 
+        <a href="index.html">Back to Home</a>
+
     </footer>
+
+
+    <script src="js/script.js"></script>
 
 </body>
 
