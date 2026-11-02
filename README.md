@@ -220,6 +220,7 @@ The following screenshots document the responsive layouts developed during Part 
 
 <img width="1919" height="1070" alt="Screenshot 2026-09-18 162041" src="https://github.com/user-attachments/assets/125fca75-6fa2-4f20-84bc-503d0456d99f" />
 
-## 10. References
+10. References
+ST_travel, 2025. Doctor holding digital tooth icon dental health cavity free oral care hygiene clean white teeth medical healthcare concept background. iStockphoto. Available at: [the iStock page] [Accessed: 18 September 2026].
 
 ST_travel, 2025. *Doctor holding digital tooth icon dental health cavity free oral care hygiene clean white teeth medical healthcare concept background*. iStockphoto. Available at: [Insert the original iStockphoto URL] [Accessed: 18 September 2026].
